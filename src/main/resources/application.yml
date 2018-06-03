@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /
+
+debug: false
+
+
+spring:
+  profiles:
+    active: prod
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
